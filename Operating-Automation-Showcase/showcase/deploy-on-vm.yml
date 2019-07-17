@@ -1,0 +1,20 @@
+---
+- name: ans
+  hosts: ansible 
+  become: yes
+  become_user: root
+  roles:
+    - usr
+    - dir
+    - ansible
+    - chk_pg
+    - cpy
+  
+
+- name: postgres
+  hosts: postgres
+  become: yes
+  become_user: root
+  roles:
+    - postgres
+    - usr
