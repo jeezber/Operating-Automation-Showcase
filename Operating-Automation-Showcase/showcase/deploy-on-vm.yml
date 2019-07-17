@@ -4,7 +4,6 @@
   become: yes
   become_user: root
   roles:
-    - usr
     - dir
     - ansible
     - chk_pg
@@ -17,4 +16,4 @@
   become_user: root
   roles:
     - postgres
-    - usr
+
