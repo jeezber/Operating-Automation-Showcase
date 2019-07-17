@@ -1,10 +1,8 @@
 ---
-- name: ans
-  hosts: ansible 
-  become: yes
-  become_user: root
 
-  task:
-  - service:
-      name: postgres
-      state: started
+- hosts: all
+  become: true
+  become_user: root
+  gather_facts: yes
+  roles:
+    -  start
