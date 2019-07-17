@@ -1,6 +1,6 @@
   - name: Ansible copy file to remote server
     copy:
-      src: ~/startprogres.yml
+      src: ~/Operating-Automation-Showcase/Operating-Automation-Showcase/showcase
       dest: /home/ansible
  
   - name: Copy host file
