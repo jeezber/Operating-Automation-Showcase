@@ -8,11 +8,7 @@
     dbname: module_test
     dbuser: postgres
 
-  tasks:
-  - service:
-      name: postgres
-      state: started
-      
+  tasks:    
   - name: ensure the database is present
     postgresql_db: >
       state=present
