@@ -1,14 +1,19 @@
   - name: Ansible copy file to remote server
     copy:
-      src: ~/Operating-Automation-Showcase/Operating-Automation-Showcase/showcase
+      src: ~/Operating-Automation-Showcase/Operating-Automation-Showcase/showcase/startprogres.yml
       dest: /home/ansible
  
   - name: Copy host file
     template:
-      src: ~/host/hosts.j2
+      src: ~/Operating-Automation-Showcase/Operating-Automation-Showcase/showcase/host/hosts.j2
       dest: /etc/ansible/hosts
 
   - name: Ansible copy file to remote server
     copy:
-      src: ~/chk_pg_cpy/chk_pg.yml
+      src: ~/Operating-Automation-Showcase/Operating-Automation-Showcase/showcase/chk_pg_cpy/chk_pg.yml
+      dest: /home/ansible
+      
+  - name: Ansible copy file to remote server
+    copy:
+      src: ~/Operating-Automation-Showcase/Operating-Automation-Showcase/showcase/chk_pg_cpy/startpg.yml
       dest: /home/ansible
