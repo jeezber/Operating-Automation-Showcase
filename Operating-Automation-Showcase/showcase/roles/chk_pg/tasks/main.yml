@@ -7,3 +7,8 @@
     copy:
       src: ~/Operating-Automation-Showcase/Operating-Automation-Showcase/showcase/chk_pg_cpy/postgrescheck.sh
       dest: /home/ansible/
+
+  - name: copy startpg
+    copy:
+      src: ~/Operating-Automation-Showcase/Operating-Automation-Showcase/showcase/chk_pg_cpy/start/tasks/main.yml
+      dest: /home/ansible/roles/start/tasks
