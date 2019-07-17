@@ -1,6 +1,9 @@
 ---
+- hosts: all
+  become: true
+  gather_facts: yes
 
-
-- service:
+  task:
+  - service:
       name: postgres
       state: started
