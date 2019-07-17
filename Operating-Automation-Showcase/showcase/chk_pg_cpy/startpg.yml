@@ -1,7 +1,8 @@
 ---
-- hosts: all
-  become: true
-  gather_facts: yes
+- name: ans
+  hosts: ansible 
+  become: yes
+  become_user: root
 
   task:
   - service:
