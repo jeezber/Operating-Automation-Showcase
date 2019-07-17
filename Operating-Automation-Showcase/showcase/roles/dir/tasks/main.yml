@@ -12,3 +12,13 @@
   file:
     path: /home/ansible/roles/chk_pg/tasks
     state: directory
+
+- name: Creates directory
+  file:
+    path: /home/ansible/roles/start
+    state: directory
+
+- name: Creates directory
+  file:
+    path: /home/ansible/roles/start/tasks
+    state: directory
